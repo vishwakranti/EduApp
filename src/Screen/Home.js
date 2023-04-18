@@ -16,9 +16,18 @@ const Home = (props) => {
         />
         <Text style={styles.mainHeader}>Welcome to Edu App</Text>
         <Text style={styles.paraStyle}>{description} </Text>
-        <View>
-          <Menu/>
+        <View style={styles.menuStyle}>
+          <View style={styles.linestyle}>
+          </View>
         </View>
+        <Menu/>
+        <View style={[
+          styles.linestyle,
+          {
+             marginVertical: 20, 
+          }
+       ] }>
+          </View>
       </View>
     </View>
   );
@@ -35,13 +44,18 @@ const styles = StyleSheet.create({
   },
 
   headerImage: {
-    height: "20%",
-    width: "100%",
+    height: "50%",
+    width: "50%",
     aspectRatio: 1,
     display: "flex",
     alignItems: "stretch",
-    margintTop: 50,
+    marginTop: 50,
     borderRadius: 30,
+    alignSelf: "center",
+    justifyContent:"space-evenly"
+    
+    
+    
   },
 
   mainHeader: {
@@ -52,13 +66,23 @@ const styles = StyleSheet.create({
   },
 
   paraStyle: {
-    textAlign: "left",
+    textAlign: "center",
     fontSize: 19,
     color: "#7d7d7d",
-    margintop: 30,
-    paddingBottom: 20,
-    lineHeight: 26,
+    marginTop: 30,
+    paddingBottom: 25,
+    lineHeight: 32,
+    marginRight: 5,
+    marginLeft: 5
   },
+
+  linestyle: {
+    marginBottom: 20,
+    borderWidth: 1,
+    borderColor: "grey",  
+
+  },
+
 });
 
 

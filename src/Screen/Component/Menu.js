@@ -7,7 +7,7 @@ const Menu = () => {
   const navigation = useNavigation();
 
   return (
-    <View style={StyleSheet.menuContainer}>
+    <View style={styles.menuContainer}>
       <TouchableOpacity
         style={styles.buttonStyles}
         onPress={() => navigation.navigate("Course")}
@@ -39,6 +39,13 @@ const Menu = () => {
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    menuContainer:{
+        flexDirection: "row",
+        justifyContent: "space-evenly",
+    },
+});
+ 
+
 
 export default Menu;
