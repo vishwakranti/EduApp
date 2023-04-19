@@ -17,16 +17,17 @@ const Home = (props) => {
         <Text style={styles.mainHeader}>Welcome to Edu App</Text>
         <Text style={styles.paraStyle}>{description} </Text>
         <View style={styles.menuStyle}>
-          <View style={styles.linestyle}>
-          </View>
+          {/* <View style={styles.linestyle}>
+          </View> */}
         </View>
-        <Menu/>
+
         <View style={[
           styles.linestyle,
           {
-             marginVertical: 20, 
+             marginVertical: 5, 
           }
        ] }>
+                <Menu/>
           </View>
       </View>
     </View>
@@ -77,14 +78,13 @@ const styles = StyleSheet.create({
   },
 
   linestyle: {
-    marginBottom: 20,
+
     borderWidth: 1,
     borderColor: "grey",  
 
   },
 
+  
 });
-
-
 
 export default Home;
