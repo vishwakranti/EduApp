@@ -1,6 +1,6 @@
 import { FlatList, StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import React from "react";
-import Courses from "../Screen/api/Course";
+import Courses from "./api/CourseData";
 import { useNavigation } from "@react-navigation/native";
 
 const Course = () => {
@@ -22,8 +22,10 @@ const Course = () => {
           <Text style={styles.mainHeader}>{item.description}</Text>
               <View style={styles.buttonContainer}>
                 <TouchableOpacity style={styles.buttonStyle}
-                  onPress={() => navigation.navigate("CourseDetails")}>
-                <Text style={styles.buttonText} >course Details</Text>
+                  onPress={() => navigation.navigate("CourseDetails", {
+                    courseId: item.id,
+                  })}>
+                <Text style={styles.buttonText} >Course Details</Text>
                 </TouchableOpacity>
 
               </View>
@@ -45,7 +47,7 @@ const Course = () => {
 const styles = StyleSheet.create({
 cardImage: {
   width: '100%',
-  height:undefined,
+  height: 100,
   aspectRatio: 1,
 
 },
@@ -91,6 +93,7 @@ buttonStyle: {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
+  flex: 1
 },
 buttonText: {
   fontSize: 20,

@@ -9,15 +9,13 @@ const Contact = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("message");
-  const [agree, setAgree] = useState(false);
-
-  
+  const [agree, setAgree] = useState(false);  
 
   const submit = () => {
     if (!name && !email && !phone && !message) {
       Alert.alert("Please fill all the fields");
     } else {
-      Alert.alert(`Thank You ${name}`);
+      alert('Thank You, ' + name );
       navigation.navigate("Home");
     }
 

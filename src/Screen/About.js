@@ -9,7 +9,7 @@ const About = () => {
       <View>
         <Image
           style={styles.imgStyle}
-          source={require("../../assets/Images/vish_pic.jpg")}
+          source={require("../assets/Images/vish_pic.jpg")}
         />
       </View>
       <Text style={styles.aboutSubheader}> About me </Text>
@@ -32,8 +32,8 @@ const About = () => {
 
 const styles = StyleSheet.create({
   imgStyle: {
-    width: "50%",
-    height: "60%",
+    width: 100,
+    height: 100,
   },
 
 

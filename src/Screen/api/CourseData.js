@@ -14,7 +14,7 @@ const Courses = [
 {
     id: "2",
     title: "Graphic Design",
-    image:require("../../assets/Images/web.jpg"),
+    image: require("../../assets/Images/web.jpg"),
     description: "The Diploma in Web and UX Design gives you the practical skills you need to make your mark in this exciting industry.",
     Course1:'HTML',
     Course2:'CSS',
@@ -25,11 +25,11 @@ const Courses = [
 {
     id: "3",
     title: "Cloud Development",
-    image:require("../../assets/Images/cloud.jpg"),
+    image: require("../../assets/Images/cloud.jpg"),
     description: "This Diploma in Cloud Engineering helps you gain expertise in designing, planning, and scaling cloud implementations.",
     Course1:'HTML',
     Course2:'CSS',
-    Course3:'JavaScript',
+    Course3:'JavaScript' ,
     price:5000,  
 }
 ]
