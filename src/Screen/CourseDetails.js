@@ -1,6 +1,23 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Courses from "./api/CourseData";
+import {
+  useFonts,
+  JosefinSans_100Thin,
+  JosefinSans_200ExtraLight,
+  JosefinSans_300Light,
+  JosefinSans_400Regular,
+  JosefinSans_500Medium,
+  JosefinSans_600SemiBold,
+  JosefinSans_700Bold,
+  JosefinSans_100Thin_Italic,
+  JosefinSans_200ExtraLight_Italic,
+  JosefinSans_300Light_Italic,
+  JosefinSans_400Regular_Italic,
+  JosefinSans_500Medium_Italic,
+  JosefinSans_600SemiBold_Italic,
+  JosefinSans_700Bold_Italic,
+} from '@expo-google-fonts/josefin-sans';
 
 const CourseDetails = ({ navigation, route }) => {
   const id = route.params.courseId;
